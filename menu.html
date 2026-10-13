@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Smashline</title>
-  <meta name="description" content="Browse the Smashline menu: smashed burgers, hand-stretched pizza, sides and drinks.">
+  <title>Menu | Pizzaria</title>
+  <meta name="description" content="Browse the Pizzaria menu: smashed burgers, hand-stretched pizza, sides and drinks.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
 
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="brand" id="brandLogo" aria-label="Smashline home">
+      <a href="index.html" class="brand" id="brandLogo" aria-label="Pizzaria home">
         <span class="brand-mark">S</span>
-        <span class="brand-name">Smashline</span>
+        <span class="brand-name">Pizzaria</span>
       </a>
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
@@ -39,25 +39,19 @@
     </section>
 
 
-    
-    <section class="section" id="stats">
-    <section class="menu-controls" id="menuControls" aria-label="Menu filters">
+    <section class="menu-controls" id="menuControls" aria-label="Menu search and categories">
       <div class="container controls-inner">
-        <div class="field">
-          <label for="categorySelect" class="field-label">Sort</label>
-          <select id="categorySelect" class="select" name="category">
-            <option value="all">All</option>
-            <option value="pizza">Pizzas</option>
-            <option value="snacks">Snacks</option>
-            <option value="salads">Salads</option>
-            <option value="drinks">Drinks</option>
-          </select>
+        <div class="search-group">
+          <input type="search" id="searchInput" class="input search-input" placeholder="Search for..." aria-label="Search the menu">
+          <button type="button" class="btn btn-search" id="themeSearchBtn">Search</button>
         </div>
-        <div class="field field-grow">
-          <label for="searchInput" class="field-label">Search</label>
-          <input type="search" id="searchInput" class="input" placeholder="I want...">
-        </div>
-        <button type="button" class="btn btn-search" id="themeSearchBtn">Search</button>
+        <nav class="category-tabs" id="categoryTabs" aria-label="Menu categories">
+          <a href="#menuList" class="tab-link active" id="tabAll" data-category="all" aria-current="true">All <span class="tab-count">(17)</span></a>
+          <a href="#pizza" class="tab-link" id="tabPizza" data-category="pizza">Pizzas <span class="tab-count">(4)</span></a>
+          <a href="#snacks" class="tab-link" id="tabSnacks" data-category="snacks">Snacks <span class="tab-count">(5)</span></a>
+          <a href="#salad" class="tab-link" id="tabSalad" data-category="salad">Salads <span class="tab-count">(4)</span></a>
+          <a href="#drinks" class="tab-link" id="tabDrinks" data-category="drinks">Drinks <span class="tab-count">(4)</span></a>
+        </nav>
       </div>
     </section>
 
@@ -82,6 +76,7 @@
                 <span class="food-price">₱165</span>
                 <button type="button" class="btn btn-small add-btn" data-item="classic" data-price="165">Add to tray</button>
               </div>
+            </div>
           </article>
           <article class="menu-item" id="pepperoni" data-category="pizza" data-price="245">
              <div class="food-media bg-yellow">
@@ -94,6 +89,7 @@
                 <span class="food-price">₱245</span>
                 <button type="button" class="btn btn-small add-btn" data-item="pepperoni" data-price="245">Add to tray</button>
               </div>
+            </div>
           </article>
           <article class="menu-item" id="hawaiian" data-category="pizza" data-price="285">
             <div class="food-media bg-yellow">
@@ -106,6 +102,7 @@
                 <span class="food-price">₱285</span>
                 <button type="button" class="btn btn-small add-btn" data-item="hawaiian" data-price="285">Add to tray</button>
               </div>
+            </div>
           </article>
           <article class="menu-item" id="vegan" data-category="pizza" data-price="195">
             <div class="food-media bg-yellow">
@@ -118,6 +115,7 @@
                 <span class="food-price">₱195</span>
                 <button type="button" class="btn btn-small add-btn" data-item="vegan" data-price="195">Add to tray</button>
               </div>
+            </div>
           </article>
         </div>
       </section>
@@ -152,8 +150,9 @@
                 <span class="food-price">₱329</span>
                 <button type="button" class="btn btn-small add-btn" data-item="lumpia" data-price="329">Add to tray</button>
               </div>
+            </div>
           </article>
-          <article class="menu-item" id="fries" data-category="fries" data-price="359">
+          <article class="menu-item" id="fries" data-category="snacks" data-price="359">
             <div class="food-media bg-yellow">
               <img src="images/snacks/fries.jpg" alt="Fries">
             </div>
@@ -164,6 +163,7 @@
                 <span class="food-price">₱359</span>
                 <button type="button" class="btn btn-small add-btn" data-item="fries" data-price="359">Add to tray</button>
               </div>
+            </div>
           </article>
           <article class="menu-item" id="spaghetti" data-category="snacks" data-price="429">
             <div class="food-media bg-yellow">
@@ -176,6 +176,20 @@
                 <span class="food-price">₱429</span>
                 <button type="button" class="btn btn-small add-btn" data-item="spaghetti" data-price="429">Add to tray</button>
               </div>
+            </div>
+          </article>
+          <article class="menu-item" id="fried_chicken" data-category="snacks" data-price="529">
+            <div class="food-media bg-yellow">
+              <img src="images/snacks/n.jpg" alt="The fried chicken">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Fried Chicken</h3>
+              <p class="food-desc">Crispy and juicy fried chicken with a golden crust.</p>
+              <div class="food-foot">
+                <span class="food-price">₱529</span>
+                <button type="button" class="btn btn-small add-btn" data-item="fried_chicken" data-price="529">Add to tray</button>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -323,16 +337,14 @@
 
   <footer class="site-footer" id="siteFooter">
     <div class="container footer-inner">
-      <p class="footer-brand">Smashline</p>
+      <p class="footer-brand">Pizzaria</p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="index.html#locations">Locations</a>
       </nav>
-      <p class="footer-note">&copy; 2026 Smashline. A COMP016 Lab Activity 3 project.</p>
+      <p class="footer-note">&copy; 2026 Pizzaria. A COMP016 Lab Activity 3 project.</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
