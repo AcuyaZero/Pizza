@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Smashline</title>
+  <meta name="description" content="Browse the Smashline menu: smashed burgers, hand-stretched pizza, sides and drinks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="pageBody">
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" id="brandLogo" aria-label="Smashline home">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">Smashline</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active" aria-current="page">Menu</a>
+        <a href="index.html#locations" class="nav-link">Locations</a>
+        <a href="index.html#story" class="nav-link">Our story</a>
+      </nav>
+      <a href="#orderPanel" class="btn btn-primary header-cta" id="headerOrderBtn">View tray</a>
+      <button type="button" class="btn btn-dark" id="themeToggleBtn">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <section class="page-banner" id="menuBanner">
+      <div class="container">
+        <h1 class="page-title" id="headline">The menu</h1>
+        <p class="page-sub">Made to order. Pick a category or browse everything.</p>
+      </div>
+    </section>
+
+
+    
+    <section class="section" id="stats">
+    <section class="menu-controls" id="menuControls" aria-label="Menu filters">
+      <div class="container controls-inner">
+        <div class="field">
+          <label for="categorySelect" class="field-label">Sort</label>
+          <select id="categorySelect" class="select" name="category">
+            <option value="all">All</option>
+            <option value="pizza">Pizzas</option>
+            <option value="snacks">Snacks</option>
+            <option value="salads">Salads</option>
+            <option value="drinks">Drinks</option>
+          </select>
+        </div>
+        <div class="field field-grow">
+          <label for="searchInput" class="field-label">Search</label>
+          <input type="search" id="searchInput" class="input" placeholder="I want...">
+        </div>
+        <button type="button" class="btn btn-search" id="themeSearchBtn">Search</button>
+      </div>
+    </section>
+
+    <div class="container menu-layout">
+
+      <div class="menu-list" id="menuList">
+
+      <section class="menu-section" id="pizza" data-category="pizza">
+        <div class="section-head">
+          <h2 class="section-title">Pizza Flavors</h2>
+          <p class="section-sub">Choose your favourite among our different flavors</p>
+        </div>
+        <div class="card-grid">
+          <article class="menu-item" id="classic" data-category="pizza" data-price="165">
+            <div class="food-media bg-yellow">
+              <img src="images/pizza/classic-mat.jpg" alt="The Classic">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Classic</h3>
+              <p class="food-desc">The classic flavor, topped with pepperoni, mozarella, and pepperoni slices.</p>
+              <div class="food-foot">
+                <span class="food-price">₱165</span>
+                <button type="button" class="btn btn-small add-btn" data-item="classic" data-price="165">Add to tray</button>
+              </div>
+          </article>
+          <article class="menu-item" id="pepperoni" data-category="pizza" data-price="245">
+             <div class="food-media bg-yellow">
+              <img src="images/pizza/hero-pizza.jpg" alt="Pepperoni pizza with a slice being lifted">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Pepperoni</h3>
+              <p class="food-desc">topped with pepperoni, mozarella, and more pepperoni slices.</p>
+              <div class="food-foot">
+                <span class="food-price">₱245</span>
+                <button type="button" class="btn btn-small add-btn" data-item="pepperoni" data-price="245">Add to tray</button>
+              </div>
+          </article>
+          <article class="menu-item" id="hawaiian" data-category="pizza" data-price="285">
+            <div class="food-media bg-yellow">
+              <img src="images/pizza/hawaii.jpg" alt="Hawaiian pizza with pineapple and ham">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Hawaiian</h3>
+              <p class="food-desc">The classic ingredients topped with sweet and tangy pineapple slices.</p>
+              <div class="food-foot">
+                <span class="food-price">₱285</span>
+                <button type="button" class="btn btn-small add-btn" data-item="hawaiian" data-price="285">Add to tray</button>
+              </div>
+          </article>
+          <article class="menu-item" id="vegan" data-category="pizza" data-price="195">
+            <div class="food-media bg-yellow">
+              <img src="images/pizza/vegan.jpg" alt="Vegan pizza with vegetables and vegan cheese">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Vegan</h3>
+              <p class="food-desc">An option for our vegan customers. 100% cruelty free, 300% tasty.</p>
+              <div class="food-foot">
+                <span class="food-price">₱195</span>
+                <button type="button" class="btn btn-small add-btn" data-item="vegan" data-price="195">Add to tray</button>
+              </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="snacks" data-category="snacks">
+        <div class="section-head">
+          <h2 class="section-title">Snacks Option</h2>
+          <p class="section-sub">Here's our options for our snacks and other items</p>
+        </div>
+        <div class="card-grid">
+          <article class="menu-item" id="Snacks" data-category="snacks" data-price="389">
+            <div class="food-media bg-yellow">
+              <img src="images/snacks/Cheeseburger.jpg" alt="Cheeseburger">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Burger</h3>
+              <p class="food-desc">Hand-pressed patties.</p>
+              <div class="food-foot">
+                <span class="food-price">₱389</span>
+                <button type="button" class="btn btn-small add-btn" data-item="burger" data-price="389">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="lumpia" data-category="snacks" data-price="329">
+            <div class="food-media bg-yellow">
+              <img src="images/snacks/lumpia.jpg" alt="Lumpia set">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Lumpia set</h3>
+              <p class="food-desc">5 pieces of lumpia on the sides.</p>
+              <div class="food-foot">
+                <span class="food-price">₱329</span>
+                <button type="button" class="btn btn-small add-btn" data-item="lumpia" data-price="329">Add to tray</button>
+              </div>
+          </article>
+          <article class="menu-item" id="fries" data-category="fries" data-price="359">
+            <div class="food-media bg-yellow">
+              <img src="images/snacks/fries.jpg" alt="Fries">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Fries</h3>
+              <p class="food-desc">Golden fries that are crispy on the outside and soft on the inside.</p>
+              <div class="food-foot">
+                <span class="food-price">₱359</span>
+                <button type="button" class="btn btn-small add-btn" data-item="fries" data-price="359">Add to tray</button>
+              </div>
+          </article>
+          <article class="menu-item" id="spaghetti" data-category="snacks" data-price="429">
+            <div class="food-media bg-yellow">
+              <img src="images/snacks/spaghetti.jpg" alt="Spaghetti">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Spaghetti</h3>
+              <p class="food-desc">The classic filipino spaghetti. Sweet and savory.</p>
+              <div class="food-foot">
+                <span class="food-price">₱429</span>
+                <button type="button" class="btn btn-small add-btn" data-item="spaghetti" data-price="429">Add to tray</button>
+              </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="salad" data-category="salad">
+        <div class="section-head">
+          <h2 class="section-title">Salads</h2>
+          <p class="section-sub"> Selection for our salad options.</p>
+        </div>
+        <div class="card-grid">
+          <article class="menu-item" id="caesar" data-category="salad" data-price="95">
+            <div class="food-media bg-green">
+              <img src="images/salads/caesar-salad.jpg" alt="Caesar Salad">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Caesar Salad</h3>
+              <p class="food-desc"> Romaine lettuce tossed with garlic croutons, Parmesan cheese, and a traditional dressing made with eggs, olive oil, and anchovies.</p>
+              <div class="food-foot">
+                <span class="food-price">₱95</span>
+                <button type="button" class="btn btn-small add-btn" data-item="caesar" data-price="95">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="greek" data-category="salad" data-price="115">
+            <div class="food-media bg-green">
+              <img src="images/salads/greek.jpg" alt="Greek Salad">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Greek Salad</h3>
+              <p class="food-desc">Tomatoes, cucumbers, Kalamata olives, red onion, and feta cheese tossed with olive oil and oregano.</p>
+              <div class="food-foot">
+                <span class="food-price">₱115</span>
+                <button type="button" class="btn btn-small add-btn" data-item="greek" data-price="115">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="caprese" data-category="salad" data-price="189">
+            <div class="food-media bg-green">
+              <img src="images/salads/caprese.jpg" alt="Caprese Salad">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Caprese Salad</h3>
+              <p class="food-desc">Sliced fresh mozzarella, ripe tomatoes, and sweet basil drizzled with olive oil and salt.</p>
+              <div class="food-foot">
+                <span class="food-price">₱189</span>
+                <button type="button" class="btn btn-small add-btn" data-item="caprese" data-price="189">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="cobb" data-category="salad" data-price="99">
+            <div class="food-media bg-green">
+              <img src="images/salads/cobb.jpg" alt="Cobb Salad">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Cobb Salad</h3>
+              <p class="food-desc"> Chopped salad greens topped with grilled chicken, bacon, hard-boiled eggs, tomatoes, avocado, and blue cheese.</p>
+              <div class="food-foot">
+                <span class="food-price">₱99</span>
+                <button type="button" class="btn btn-small add-btn" data-item="cobb" data-price="99">Add to tray</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="drinks" data-category="drinks">
+        <div class="section-head">
+          <h2 class="section-title">Drinks and Beverages</h2>
+          <p class="section-sub">Cold, fizzy or thick.</p>
+        </div>
+        <div class="card-grid">
+          <article class="menu-item" id="coke" data-category="drinks" data-price="65">
+            <div class="food-media bg-green">
+              <img src="images/drinks/coke.jpg" alt="Coke">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Coke</h3>
+              <p class="food-desc">A classic coca-cola drink. cold and refreshing.</p>
+              <div class="food-foot">
+                <span class="food-price">₱65</span>
+                <button type="button" class="btn btn-small add-btn" data-item="coke" data-price="65">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="icetea" data-category="drinks" data-price="135">
+            <div class="food-media bg-green">
+              <img src="images/drinks/iced tea.jpg" alt="Iced Tea">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Iced Tea</h3>
+              <p class="food-desc">A cold brewed tea. A sweet and healthy drink that is freshly brewed daily. </p>
+              <div class="food-foot">
+                <span class="food-price">₱135</span>
+                <button type="button" class="btn btn-small add-btn" data-item="icetea" data-price="135">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="bukojuice" data-category="drinks" data-price="75">
+            <div class="food-media bg-green">
+              <img src="images/drinks/buko.jpg" alt="Buko Juice">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">Buko Juice</h3>
+              <p class="food-desc">A fresh buko juice taken straight from inside a coconut.</p>
+              <div class="food-foot">
+                <span class="food-price">₱75</span>
+                <button type="button" class="btn btn-small add-btn" data-item="bukojuice" data-price="75">Add to tray</button>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item" id="shake" data-category="drinks" data-price="40">
+            <div class="food-media bg-green">
+              <img src="images/drinks/milkshake.jpg" alt="Milk Shake">
+            </div>
+            <div class="food-body">
+              <h3 class="food-name">MilkShake</h3>
+              <p class="food-desc"> a sweet, cold beverage made by blending milk and ice cream. </p>
+              <div class="food-foot">
+                <span class="food-price">₱40</span>
+                <button type="button" class="btn btn-small add-btn" data-item="milkshake" data-price="40">Add to tray</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+        <p class="empty-state" id="emptyMessage" hidden>Nothing matches your search. Clear the search box or pick another category.</p>
+      </div>
+
+      <aside class="order-panel" id="orderPanel" aria-label="Your tray">
+        <h2 class="order-title">Your tray</h2>
+        <ul class="order-list" id="orderList">
+          <li class="order-empty" id="orderEmpty">Your tray is empty. Add something tasty.</li>
+        </ul>
+        <div class="order-total-row">
+          <span>Total</span>
+          <strong id="orderTotal">₱0</strong>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="checkoutBtn">Place order</button>
+        <button type="button" class="btn btn-ghost btn-block" id="clearTrayBtn">Clear tray</button>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-inner">
+      <p class="footer-brand">Smashline</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#locations">Locations</a>
+      </nav>
+      <p class="footer-note">&copy; 2026 Smashline. A COMP016 Lab Activity 3 project.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

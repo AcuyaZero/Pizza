@@ -1,0 +1,130 @@
+/
+<!-- ===== BEST SELLERS ===== -->
+    <section class="section" id="bestsellers">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Best sellers</h2>
+          <p class="section-sub">The three orders our regulars repeat the most.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="food-card" id="featuredBurger">
+            <div class="food-media bg-red" aria-hidden="true">🍔</div>
+            <div class="food-body">
+              <h3 class="food-name">Double Smash</h3>
+              <p class="food-desc" id="featuredBurgerDesc">Two smashed patties, American cheese, pickles, house sauce.</p>
+              <div class="food-foot">
+                <span class="food-price">₱245</span>
+                <a href="menu.html#burgers" class="btn btn-small">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card" id="featuredPizza">
+            <div class="food-media bg-yellow" aria-hidden="true">🍕</div>
+            <div class="food-body">
+              <h3 class="food-name">Pepperoni Pull</h3>
+              <p class="food-desc" id="featuredPizzaDesc">Crisp-edged crust, stretchy mozzarella, cup-and-char pepperoni.</p>
+              <div class="food-foot">
+                <span class="food-price">₱389</span>
+                <a href="menu.html#pizza" class="btn btn-small">Order</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card" id="featuredFries">
+            <div class="food-media bg-green" aria-hidden="true">🍟</div>
+            <div class="food-body">
+              <h3 class="food-name">Hand-cut Fries</h3>
+              <p class="food-desc" id="featuredFriesDesc">Cut in store every morning and fried twice. Salted to order.</p>
+              <div class="food-foot">
+                <span class="food-price">₱95</span>
+                <a href="menu.html#sides" class="btn btn-small">Order</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- ===== PROMO STRIP ===== -->
+    <section class="promo-strip" id="promoStrip" aria-label="Current promo">
+      <div class="container promo-inner">
+        <p class="promo-text" id="promoText">Combo Tuesday: any burger, fries and drink for ₱199.</p>
+        <button type="button" class="promo-btn" id="promoBtn">Claim the deal</button>
+      </div>
+    </section>
+
+    
+
+    <!-- ===== STORY ===== -->
+    <section class="section section-dark" id="story">
+      <div class="container split">
+        <div class="split-copy">
+          <h2 class="section-title">Fast food, made slowly enough to be good.</h2>
+          <p>Every patty is pressed on a screaming-hot griddle the moment you order. Every pizza is stretched by hand and fired fresh. Nothing sits under a heat lamp.</p>
+          <p>Toppings are prepped each morning. Fries are cut in store. If it isn't fresh, it doesn't go on your tray.</p>
+        </div>
+        <ul class="stat-list" id="promiseList">
+          <li class="stat-item">
+            <strong class="stat-big">100%</strong>
+            <span>Beef, never frozen</span>
+          </li>
+          <li class="stat-item">
+            <strong class="stat-big">&lt;10 min</strong>
+            <span>From order to tray</span>
+          </li>
+          <li class="stat-item">
+            <strong class="stat-big">Daily</strong>
+            <span>Fresh-cut toppings and fries</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== LOCATIONS ===== -->
+    <section class="section" id="locations">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Find a Smashline</h2>
+          <p class="section-sub">Dine in, take out, or get it delivered.</p>
+        </div>
+        <div class="location-grid">
+          <article class="location-card">
+            <h3 class="location-name">San Fernando</h3>
+            <p>MacArthur Highway, Pampanga</p>
+            <p class="location-hours">Open daily, 10:00 am to 11:00 pm</p>
+          </article>
+          <article class="location-card">
+            <h3 class="location-name">Angeles City</h3>
+            <p>Friendship Highway, Pampanga</p>
+            <p class="location-hours">Open daily, 10:00 am to 12:00 am</p>
+          </article>
+          <article class="location-card">
+            <h3 class="location-name">Clark Freeport</h3>
+            <p>Clark Global City, Pampanga</p>
+            <p class="location-hours">Open daily, 9:00 am to 11:00 pm</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-inner">
+      <p class="footer-brand">Smashline</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="#locations">Locations</a>
+      </nav>
+      <p class="footer-note">&copy; 2026 Smashline. A COMP016 Lab Activity 3 project.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript lives in script.js (no inline logic) -->
+  <script src="script.js"></script>
+</body>
